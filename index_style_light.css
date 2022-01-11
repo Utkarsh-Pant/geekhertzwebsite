@@ -1,0 +1,73 @@
+:root{
+    --dark-color: #fcfbef;   
+    --light-color: #29313a;
+}
+
+*{
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+html, body{
+    background: var(--dark-color);
+    scroll-behavior: smooth;
+}
+
+.parallax{
+    background: var(--background);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 90%;
+    color: var(--foreground);
+}
+
+.panel{
+    height: 50%;
+    background: var(--background);
+    color: var(--foreground);    
+}
+header{
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: var(--light-color);
+    padding: 0.5%;
+    width: 100%;
+}
+
+header ul li{
+    transition: all 0.1s ease-in;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 5px;
+    padding: 5px;
+    list-style: none;
+}
+header ul li:hover{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+#icons{
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#themeChange:hover{
+    cursor: pointer;
+}

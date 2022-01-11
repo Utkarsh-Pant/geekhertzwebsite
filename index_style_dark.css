@@ -1,0 +1,128 @@
+:root{
+    --dark-color: #29313a;   
+    --light-color: #fcfbef;
+}
+
+*{
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+html, body{
+    background: var(--dark-color);
+    scroll-behavior: smooth;
+}
+
+.parallax{
+    background: var(--background);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 90%;
+    color: var(--foreground);
+}
+
+.panel{
+    height: 50%;
+    background: var(--background);
+    color: var(--foreground);    
+}
+header{
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: var(--light-color);
+    padding: 0.5%;
+    width: 100%;
+}
+
+header ul li{
+    transition: all 0.1s ease-in;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 5px;
+    padding: 5px;
+    list-style: none;
+}
+header ul li:hover{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+#icons{
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#themeChange:hover{
+    cursor: pointer;
+}
+
+#mailTri{
+    position: relative;
+    z-index: 10;
+    width: 0.0px;
+    height: 0.0px;
+    border-top: 7px solid #ffffff00;
+    border-right: 10px solid #8f44fd;
+    border-bottom: 7px solid #8f44fd;
+    border-left: 10px solid #792bec;
+    transition: all 0.1s;
+}
+
+#mailSq{
+    position: relative;
+    width: 0.0px;
+    height: 0.0px;
+    border-top: 7px solid #6309eb;
+    border-right: 10px solid #6309eb;
+    border-bottom: 7px solid #6309eb;
+    border-left: 10px solid #6309eb;
+    transform: translateY(-105%);
+}
+
+#mailPage{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid #ece9f3;
+    border-right: 7px solid #ece9f3;
+    border-bottom: 7px solid #ece9f3;
+    border-left: 7px solid #ece9f3;
+    transform: translateY(-200%) translateX(20%);
+    transition: transform 0.1s;
+}
+
+#mailTri:hover ~ #mailPage{
+    transform: translateY(-215%) translateX(20%);
+}
+
+#contactIcon{
+    width: 15px;
+    height: 15px;
+    transform: translateX(-15%) translateY(15%);
+}
+
+#contactForm form{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    z-index: 100;
+    background: blue;
+    top: 25%;
+    right: 25%;
+}

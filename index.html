@@ -1,12 +1,54 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Bionic Arms</title>
+    <link rel="stylesheet" href="index_style_dark.css">
 </head>
 <body>
-    <h1>HEADING WEBSITE NAME</h1>
+    <header>
+        <ul>
+            <li>Sample 1</li>
+            <li>Sample 2</li>
+            <li>Sample 3</li>
+            <li>Sample 4</li>
+            <li>
+            <div id = "contactIcon">
+                <div id = "mailTri"></div>
+                <div id = "mailSq"></div>
+                <div id = "mailPage"></div>
+            </div>
+            </li>
+        </ul>
+    </header>
+        <!-- <div id = "contactForm">
+            <div></div>
+            <form>
+    
+            </form>
+        </div> -->
+    <main>
+        <div style = "--background: url('assets/theme.png'); --foreground: var(--light-color);" id = "initial-heading" class = "parallax">
+            <p>Bionic Arms - A great boon</p>
+        </div>
+        <div style = "--background: var(--light-color); --foreground: var(--dark-color);" class = "panel">
+            <p>yoink</p>
+        </div> 
+        <div style = "--background: var(--dark-color); --foreground: var(--light-color);" class = "parallax">
+            <p>yankerson</p>
+        </div> 
+        <div style = "--background: var(--light-color); --foreground: var(--dark-color);" class = "panel">
+            <p></p>
+        </div>
+        <div style = "--background: var(--dark-color); --foreground: var(--light-color);" class = "parallax">
+            <p>yankerson</p>
+        </div>    
+    </main>
+
+    <div id = "icons">
+        <img src="assets/theme.png" alt="Change Theme!" id = "themeChange">
+        <a href = "#initial-heading"><img src="assets/backtotop.png" alt="Top!"></a>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
